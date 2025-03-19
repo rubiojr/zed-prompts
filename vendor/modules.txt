@@ -1,10 +1,10 @@
-# github.com/bmatsuo/lmdb-go v1.8.0 => /home/rubiojr/git/cloudflare/lmdb-go
-## explicit; go 1.24.0
+# github.com/bmatsuo/lmdb-go v1.8.0
+## explicit
 github.com/bmatsuo/lmdb-go/internal/lmdbarch
+github.com/cloudflare/lmdb-go/internal/lmdbarch
 # github.com/cloudflare/lmdb-go v1.8.1-0.20240920015255-e440f5952ee1
 ## explicit
 github.com/cloudflare/lmdb-go/lmdb
-github.com/cloudflare/lmdb-go/internal/lmdbarch
 # github.com/cpuguy83/go-md2man/v2 v2.0.5
 ## explicit; go 1.11
 github.com/cpuguy83/go-md2man/v2/md2man
@@ -17,4 +17,3 @@ github.com/urfave/cli/v2
 # github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1
 ## explicit; go 1.15
 github.com/xrash/smetrics
-# github.com/bmatsuo/lmdb-go => /home/rubiojr/git/cloudflare/lmdb-go
