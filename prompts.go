@@ -237,7 +237,7 @@ func dbPath() string {
 	if runtime.GOOS == "linux" {
 		return filepath.Join(os.Getenv("HOME"), ".local/share/zed/prompts/prompts-library-db.0.mdb")
 	} else if runtime.GOOS == "darwin" {
-		return filepath.Join(os.Getenv("HOME"), ".config/zed/prompts")
+		return filepath.Join(os.Getenv("HOME"), ".config/zed/prompts/prompts-library-db.0.mdb")
 	}
 	panic("unsupported OS")
 }
