@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/cloudflare/lmdb-go/lmdb"
+	"github.com/rubiojr/zed-prompts/internal/cloudflare/lmdb-go/lmdb"
 )
 
 // Metadata examples from metadata.v2
