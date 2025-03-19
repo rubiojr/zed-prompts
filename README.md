@@ -17,6 +17,10 @@ go install github.com/rubiojr/zed-prompts@latest
 
 ## Usage
 
+> [!NOTE]
+> Running the tool when Zed is running generally works, though it may cause database inconsistencies, if the prompt library is being modified concurrently.
+> It's recommended to stop Zed before running the tool.
+
 ### Export Prompts
 
 Export your prompts from Zed's LMDB database to a JSON file:
@@ -29,6 +33,12 @@ Export to stdout:
 
 ```bash
 zed-prompts export --output -
+```
+
+Importing from a remote computer:
+
+```bash
+ssh <my-host> zed-prompts export --output - | zed-prompts import --input -
 ```
 
 Use a custom database path:
