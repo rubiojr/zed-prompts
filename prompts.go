@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"runtime"
 
 	"github.com/cloudflare/lmdb-go/lmdb"
 )
@@ -233,7 +234,12 @@ func put(txn *lmdb.Txn, database string, key []byte, value []byte) error {
 }
 
 func dbPath() string {
-	return filepath.Join(os.Getenv("HOME"), ".local/share/zed/prompts/prompts-library-db.0.mdb")
+	if runtime.GOOS == "linux" {
+		return filepath.Join(os.Getenv("HOME"), ".local/share/zed/prompts/prompts-library-db.0.mdb")
+	} else if runtime.GOOS == "darwin" {
+		return filepath.Join(os.Getenv("HOME"), ".config/zed/prompts")
+	}
+	panic("unsupported OS")
 }
 
 func listMetadata() error {
