@@ -12,7 +12,7 @@ This tool allows you to:
 ## Installation
 
 ```bash
-go install github.com/rubiojr/zed-prompts@main
+go install github.com/rubiojr/zed-prompts@latest
 ```
 
 ## Usage
