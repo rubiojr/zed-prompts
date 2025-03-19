@@ -2,6 +2,9 @@
 
 A command-line utility for importing and exporting prompts from Zed's prompt library.
 
+> [!CAUTION]
+> The tool is unofficial. Zed may change the database format at any time, breaking compatibility with this tool.
+
 ## Overview
 
 This tool allows you to:
