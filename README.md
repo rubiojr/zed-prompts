@@ -35,7 +35,7 @@ Export to stdout:
 zed-prompts export --output -
 ```
 
-Importing from a remote computer:
+Importing from a remote computer (the remote computer must have the tool installed):
 
 ```bash
 ssh <my-host> zed-prompts export --output - | zed-prompts import --input -
