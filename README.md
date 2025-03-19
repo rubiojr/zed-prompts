@@ -111,7 +111,7 @@ The JSON file format for import/export is an array of prompt objects:
 
 ## Requirements
 
-- Go 1.23 or higher
+- Go 1.24 or higher
 - Zed editor installed (for accessing the prompts database)
 
 ## Note
